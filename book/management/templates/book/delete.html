@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        Seguro que quieres borrar el registro
+        <input type="submit" value="Eliminar">
+    </form>
+</body>
+</html>
