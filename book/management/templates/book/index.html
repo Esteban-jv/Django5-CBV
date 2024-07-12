@@ -5,6 +5,11 @@
     <title>Lista</title>
 </head>
 <body>
+    <form method="post" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">logout</button>
+    </form>
+    <hr>
     {% for b in book_list %}
         <p> {{ b.name }} </p>
     {% endfor %}
