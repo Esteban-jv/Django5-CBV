@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV</title>
+</head>
+<body>
+  <h1>CSV Manager</h1>
+
+    <table>
+        {% for l in objects %}
+            <tr>
+                {% for r in l %}
+                    <td>{{ r }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

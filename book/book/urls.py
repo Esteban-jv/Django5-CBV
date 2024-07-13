@@ -21,4 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('management', include('management.urls')),
     path('auth', include('user.urls')),
+    path('csv', include('csvs.urls')),
+    path('excel', include('excel.urls')),
+    # path('pdfs', include('pdfs.urls')),
 ]

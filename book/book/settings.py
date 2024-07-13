@@ -39,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'management',
-    'user'
+    'user',
+    'csvs',
+    'excel',
+    # 'pdfs'
 ]
 
 MIDDLEWARE = [
